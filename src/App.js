@@ -12,6 +12,8 @@ import Profile from "./components/Profile";
 import Sidebar from"./components/layout/Sidebar";
 import Offre from "./components/Offre";
 import Dashbord from "./components/Dashbord";
+import Details from "./components/details";
+import Quize from "./components/quize";
 /***root routes ***/
 const router = createBrowserRouter([
     {
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
      {
         path:'/dashbord',
         element: <Dashbord></Dashbord>
+     },
+     {
+        path:'/details',
+        element: <Details></Details>
+     },
+     {
+        path:'/quize',
+        element: <Quize></Quize>
      },
     {
         path:'*',

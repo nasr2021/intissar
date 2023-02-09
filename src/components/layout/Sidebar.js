@@ -2,6 +2,8 @@ import React, { Children , useState } from 'react';
 import {FaTh,FaBars,FaUserAlt,FaCommentAlt,FaShoppingBag,FaThList,FaWpforms} from "react-icons/fa";
 import {TbLogout,TbCertificate} from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
+import Offre from '../Offre';
+import Header from './hedr';
 //import styles from '../styles/Username.module.css';
  function Sidebar ( {Children}){
     const [isOpen, setIsOpen]=useState(false);
@@ -36,6 +38,7 @@ import { NavLink } from 'react-router-dom';
     ];
     return (
         <div className='container'>
+             
             <div style={{width:isOpen ? "250px" : "50px"}} className='sidebar'>
                 <div className='top-section'>
                     <h1 style={{display:isOpen? "block" : "none"}} className='logo'>Logo</h1>
@@ -60,7 +63,7 @@ import { NavLink } from 'react-router-dom';
                 </div>
 
             </div>
-            <main>{Children}</main>
+            <main><Offre/></main>
          
         </div>
     )
