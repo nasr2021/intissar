@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link } from 'react-router-dom';
-import avatar from '../assets/avatar.png';
+import avatar from '../../assets/avatar.png';
 import { Toaster } from 'react-hot-toast';
-import styles from '../styles/Username.module.css';
+import styles from '../../styles/Username.module.css';
 import { useFormik} from 'formik';
-import { usernameValidate } from './helper/validate';
+import { usernameValidate } from '../helper/validate';
 function Username() {
 
   const formik = useFormik({

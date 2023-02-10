@@ -63,7 +63,7 @@ import Header from './hedr';
                 </div>
 
             </div>
-            <main><Offre/></main>
+            <main>{Children}</main>
          
         </div>
     )

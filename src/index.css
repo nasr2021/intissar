@@ -112,7 +112,7 @@ overflow-y: scroll;
     padding-top: 9px;
     padding-bottom: 16px;
 }
-.badge{
+.badges{
     background-color: red;
     border-radius: 100%;
     height: 20px;
@@ -121,19 +121,49 @@ overflow-y: scroll;
 }
 /**card publication**/
 .pub{
-    border: 2px solid black;
+    border: 2px solid wheat;
     margin: 12px;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     padding: 12px;
     box-shadow: 10px 5px 5px gainsboro;
 
 }
 .pub:hover{
     background-color: #dcdce6;
-    border-left:5px solid #000;
+    border-left:5px solid green;
     border-top:1px solid #fff;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
+}
+.bold{
+    font-size: large;
+    font-weight: bold;
+}
+.ajou{
+    margin-right: 70px;
+    margin-top: 16px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+   
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+.secondary{
+    background-color: green;
+    color:white;
+border-radius: 10px;
+position: 12px;
+
+}
+.type{
+    background-color: grey;
+    color:white;
+border-radius: 10px;
+padding-left: 12px; 
 }
 .btn1{
     background-color: green;
@@ -152,7 +182,8 @@ overflow-y: scroll;
 .groupbtn{
     display: flex;
     justify-content: flex-end;
-   
+    margin-right: 4%;
+   margin-bottom: 4%;
 }
 .imgpub{
 
@@ -173,4 +204,35 @@ overflow-y: scroll;
 }
 .imputsearch{
     border: 2px solid white;
+}
+
+.cardpub{
+    display: flex;
+    justify-content: space-between;
+
+}
+/** detail**/
+.border-left{
+    margin-top: 50px;
+    border-right: 2px solid black;
+   
+    
+}
+.marg{
+    margin-right: 180px;
+    margin-left: 150px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.colors{
+    color: blue;
+}
+.colors:hover{
+    color: red;
+}
+.detail{
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
