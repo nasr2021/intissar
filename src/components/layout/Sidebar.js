@@ -2,7 +2,7 @@ import React, { Children , useState } from 'react';
 import {FaTh,FaBars,FaUserAlt,FaCommentAlt,FaShoppingBag,FaThList,FaWpforms} from "react-icons/fa";
 import {TbLogout,TbCertificate} from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
-import Offre from '../Offre';
+import Offre from '../offre_emploi/Offre';
 import Header from './hedr';
 //import styles from '../styles/Username.module.css';
  function Sidebar ( {Children}){

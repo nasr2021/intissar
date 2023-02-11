@@ -43,11 +43,11 @@ export default function Password() {
   //if(serverError) return <h1 className='text-xl text-red-500'>{serverError.message}</h1>
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto d-flex justify-center mt-6">
 
       <Toaster position='top-center' reverseOrder={false}></Toaster>
 
-      <div className='flex justify-center items-center h-screen'>
+      <div className='d-flex justify-center items-center h-screen'>
         <div className={styles.glass}>
 
           <div className="title flex flex-col items-center">

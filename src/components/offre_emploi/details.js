@@ -2,10 +2,11 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import {IoMdNotifications} from "react-icons/io";
 import{FaSearch} from "react-icons/fa";
-import avatar from '../assets/avatar.png';
+import avatar from '../../assets/avatar.png';
 import Button from 'react-bootstrap/Button';
 import { useHistory,useNavigate , NavLink } from 'react-router-dom';
-
+import Header from'../layout/hedr';
+import Sidebar from '../layout/Sidebar';
 function Details() {
     const offreJob=[
         
@@ -21,23 +22,8 @@ function Details() {
   return (
    
      <div className=''>
-     <Card className='hide'>
-       <Card.Header > 
-       <div className='hid' >
-       <NavLink to="/profile"  activeclassName="active" >
-        <div className='pro'>
-        
-            <img src={avatar} className="imgpub" alt="avatar" />
-           <div className='position'>nom de profile</div>
-           </div>
-           </NavLink>
-         <div className='position'>
-             <div className='pro'>
-             <span class="badge badge-pill">1</span><IoMdNotifications /></div>
-             </div>
-       </div>
-       </Card.Header>
-     </Card>
+    
+     <Header/>
      <Card className='cards'>
   
 <div className='cardpub'>
@@ -62,16 +48,6 @@ function Details() {
            
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
        {/* <Card.Body className='text'>
        {offreJob.map((item, index)=>(
        <Card className='pub '>
@@ -101,13 +77,15 @@ function Details() {
  }
  <hr></hr>
        </Card.Body> */}
+       
        <Card.Footer> <div className='groupbtn'>
+       <Button variant="secondary" className='btn2 px-2' type='submit' onClick={()=>navigate('/offre')}>return</Button>
          <Button  className='btn1' type='submit' onClick={()=>navigate('/quize')}>Demande</Button>
          </div></Card.Footer>
      </Card>
  
      </div>
-
+   
   );
 }
 

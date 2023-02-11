@@ -28,7 +28,7 @@ export default function Reset() {
 
  
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto  d-flex justify-center mt-6">
 
       <Toaster position='top-center' reverseOrder={false}></Toaster>
 

@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Dashbord() {
+function Ajouter() {
   return (
     <div >
- qrzt
+ajouter
 </div>
 
   )
 }
 
-export default Dashbord
+export default Ajouter

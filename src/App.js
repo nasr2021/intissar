@@ -10,10 +10,12 @@ import Reset from "./components/auth/Reset";
 import PageNotFound from "./components/PageNotFound";
 import Profile from "./components/auth/Profile";
 import Sidebar from"./components/layout/Sidebar";
-import Offre from "./components/Offre";
-import Dashbord from "./components/Dashbord";
-import Details from "./components/details";
-import Quize from "./components/quize";
+import Offre from "./components/offre_emploi/Offre";
+import Dashbord from "./components/Dashboard/Dashbord";
+import Details from "./components/offre_emploi/details";
+import Quize from "./components/quiz/quize";
+import Stepper from './components/stepper/stepper';
+import ModalOffre from "./components/modals/ajoutermodal";
 /***root routes ***/
 const router = createBrowserRouter([
     {
@@ -60,6 +62,10 @@ const router = createBrowserRouter([
         path:'/quize',
         element: <Quize></Quize>
      },
+    {
+        path:'/Stepper',
+        element:<Stepper></Stepper>
+    },
     {
         path:'*',
         element: <PageNotFound></PageNotFound>
